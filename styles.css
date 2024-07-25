@@ -32,6 +32,23 @@ body {
     max-height: 50px;
 }
 
+/* Apply a unique font to the logo */
+#logo {
+    font-family: 'Great Vibes', cursive; /* Replace with your chosen font */
+    font-size: 1.6rem; /* Adjust size as needed */
+    color: var(--rhythm); /* Replace with your preferred color */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Optional: Remove color change on click (focus) */
+#logo:focus,
+#logo:active {
+    color: var(--arsenic); /* Keep the same color as default */
+}
+
+
 /* Navigation styling */
 .main-nav ul {
     list-style: none;

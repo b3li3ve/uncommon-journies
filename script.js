@@ -2,6 +2,7 @@ function handleResize() {
     const searchArea = document.querySelector('.search-area');
     const navList = document.querySelector('.main-nav');
     const burger = document.querySelector('#burger')
+    const dropdownMenu = document.querySelector('.dropdown-menu') 
     const maxSearchWidth = 1024; // Adjust as needed
     const maxNavWidth = 768; // Adjust as needed
 
@@ -22,6 +23,7 @@ function handleResize() {
     } else {
         navList.classList.remove('hide-nav-list');
         burger.classList.add('hide-burger')
+        dropdownMenu.classList.add('hide-burger')
     }
 
     // Log class lists for debugging
