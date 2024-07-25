@@ -4,7 +4,7 @@
     --gunmetal: #2A3439;
     --outer-space: #2B3A42;
     --arsenic: #393D3F;
-    --rhythm: #CCCCCC;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
 }
 
 /* General styles */
@@ -24,8 +24,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
+/* Logo styling */
 .main-header .logo img {
     max-height: 50px;
 }
@@ -36,6 +38,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .main-nav ul li {
@@ -48,7 +51,7 @@ body {
 
 .main-nav ul li a {
     text-decoration: none;
-    color: var(--rhythm);
+    color: var(--rhythm); /* Lighter color for better visibility */
     font-size: 16px;
     padding: 10px 15px;
     transition: background-color 0.3s, color 0.3s;
@@ -63,6 +66,7 @@ body {
 .search-area {
     display: flex;
     align-items: center;
+    margin-right: 20px;
 }
 
 .search-field {
@@ -82,7 +86,7 @@ body {
 }
 
 .search-field input::placeholder {
-    color: var(--rhythm);
+    color: var(--rhythm); /* Lighter color for better visibility */
 }
 
 /* Menu button styling */
@@ -98,4 +102,55 @@ body {
     width: 25px;
     height: 3px;
     background-color: #fff;
+}
+
+/* Hide search area class */
+.hide-search-area {
+    display: none;
+}
+
+/* Hide nav list class */
+.hide-nav-list {
+    display: none;
+}
+
+/* Basic styles for dropdown menu */
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 60px; /* Adjust based on your layout */
+    right: 0;
+    background-color: var(--gunmetal); /* Match the background color of your nav */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu ul li {
+    margin: 0;
+}
+
+.dropdown-menu ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: var(--rhythm); /* Lighter color for better visibility */
+    text-decoration: none;
+}
+
+.dropdown-menu ul li a:hover {
+    background-color: var(--keppel);
+    color: var(--outer-space);
+}
+
+.show-dropdown {
+    display: block; /* Show the dropdown menu */
+}
+
+.hide-burger {
+    display: none;
 }
