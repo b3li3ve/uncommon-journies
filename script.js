@@ -43,3 +43,4 @@ document.addEventListener('DOMContentLoaded', () => {
         dropdownMenu.classList.toggle('show-dropdown');
     });
 });
+

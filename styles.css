@@ -14,6 +14,10 @@ body {
     padding: 0;
 }
 
+p {
+    text-indent: 30px; /* Adjust the pixel value as needed */
+}
+
 /* Header styling */
 .main-header {
     background-color: var(--gunmetal);
@@ -34,14 +38,18 @@ body {
 
 /* Apply a unique font to the logo */
 #logo {
-    font-family: 'Great Vibes', cursive; /* Replace with your chosen font */
+    font-family: Arial Impact, 'Arial Narrow Bold', sans-serif; /* Replace with your chosen font */
     font-size: 1.6rem; /* Adjust size as needed */
     color: var(--rhythm); /* Replace with your preferred color */
     text-align: center;
     text-decoration: none; /* Remove underline */
     transition: color 0.3s ease; /* Smooth color transition */
 }
-
+.logo {
+    border: 2px solid var(--rhythm); /* Adjust border width, style, and color */
+    padding: 10px;
+    margin: 1px;
+}
 /* Optional: Remove color change on click (focus) */
 #logo:focus,
 #logo:active {
@@ -363,6 +371,12 @@ body {
     position: relative;
 }
 
+.info-box:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Adds a white shading effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increases shadow on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
 .info-box .info-content {
     text-align: center;
     z-index: 1; /* Ensures text is above the background image */
@@ -398,4 +412,32 @@ body {
     .info-box {
         height: auto; /* Adjust height on smaller screens */
     }
+}
+/* Hero Section Styling */
+/* Hero Section Styling */
+.hero-about {
+    height: 300px;
+    background-image: url('hero-about-photo.jpeg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: top center; /* Positions the image at the top and centers horizontally */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 100px 20px 100px 0px; /* Padding for content inside the hero section */
+    color: var(--rhythm);
+    text-align: center; /* Centers the text horizontally */
+    display: flex; /* Uses Flexbox for vertical alignment */
+    justify-content: center;
+    align-items: center; /* Centers content horizontally */
+}
+
+.hero h1 {
+    font-size: 3rem; /* Main heading size */
+    margin-bottom: 200px;
+    color: var(--rhythm); /* Text color for the heading */
+}
+
+.hero-section p {
+    font-size: 1.2rem; /* Paragraph font size */
+    line-height: 1.6;
+    max-width: 600px; /* Limits paragraph width for readability */
+    margin: 0 auto; /* Centers the paragraph */
 }
