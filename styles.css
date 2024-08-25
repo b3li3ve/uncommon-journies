@@ -329,6 +329,16 @@ p {
     margin-top: 40px; /* Space above the button */
 }
 
+/* Removes the default link styling for email links */
+.no-style-link {
+    color: inherit; /* Inherits the color from its parent element */
+    text-decoration: none; /* Removes the underline */
+}
+
+h4 {
+    color: #3AB0A2;
+}
+
 .about-button {
     display: inline-block;
     background-color: var(--keppel);
@@ -369,6 +379,7 @@ p {
     border-radius: 10px; /* Rounds the corners of the boxes */
     overflow: hidden; /* Hides any overflow content */
     position: relative;
+    background-color: rgba(0, 0, 0, 1); /* Semi-transparent black overlay */
 }
 
 .info-box:hover {
@@ -389,6 +400,24 @@ p {
 
 .info-box p {
     font-size: 1rem;
+}
+
+/* Add a semi-transparent overlay */
+.info-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Ensures the overlay is above the background but below the text */
+}
+
+/* Ensure text is above the overlay */
+.info-box * {
+    position: relative;
+    z-index: 2;
 }
 
 .info-box.join-study {
@@ -440,4 +469,126 @@ p {
     line-height: 1.6;
     max-width: 600px; /* Limits paragraph width for readability */
     margin: 0 auto; /* Centers the paragraph */
+}
+
+.hero-join {
+    height: 300px;
+    background-image: url('hero-join.jpeg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: top center; /* Positions the image at the top and centers horizontally */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 100px 20px 100px 0px; /* Padding for content inside the hero section */
+    color: var(--rhythm);
+    text-align: center; /* Centers the text horizontally */
+    display: flex; /* Uses Flexbox for vertical alignment */
+    justify-content: center;
+    align-items: center; /* Centers content horizontally */
+}
+
+/* Styles for the Engage page */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333; /* Adjust as needed for readability */
+}
+
+.info-section {
+    margin-bottom: 20px;
+}
+
+.info-section h1, 
+.info-section h2, 
+.info-section h3 {
+    margin-bottom: 10px;
+    color: #000; /* Heading color */
+}
+
+.info-section p {
+    margin-bottom: 15px;
+    line-height: 1.6; /* Improves readability */
+}
+
+.info-section a {
+    color: #007bff; /* Adjust link color */
+    text-decoration: none;
+}
+
+.info-section a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Add a hover effect to the links */
+.info-section a:hover {
+    color: #0056b3; /* Adjust hover color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content {
+        padding: 15px;
+    }
+}
+
+.hero-blog {
+    height: 300px;
+    background-image: url('hero-blog.jpeg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: top center; /* Positions the image at the top and centers horizontally */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 100px 20px 100px 0px; /* Padding for content inside the hero section */
+    color: var(--rhythm);
+    text-align: center; /* Centers the text horizontally */
+    display: flex; /* Uses Flexbox for vertical alignment */
+    justify-content: center;
+    align-items: center; /* Centers content horizontally */
+}
+
+.hero h1 {
+    font-size: 3rem; /* Main heading size */
+    margin-bottom: 200px;
+    color: var(--rhythm); /* Text color for the heading */
+}
+
+.hero-section p {
+    font-size: 1.2rem; /* Paragraph font size */
+    line-height: 1.6;
+    max-width: 600px; /* Limits paragraph width for readability */
+    margin: 0 auto; /* Centers the paragraph */
+}
+
+.info-box.journey {
+    background-image: url('journey.png'); /* Replace with your image path */
+}
+
+.info-box.mosaic {
+    background-image: url('mosaic.jpeg'); /* Replace with your image path */
+}
+
+.info-box.praise {
+    background-image: url('praise.jpeg'); /* Replace with your image path */
+}
+
+.hero-study {
+    height: 300px;
+    background-image: url('hero-study.jpeg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: top center; /* Positions the image at the top and centers horizontally */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 100px 20px 100px 0px; /* Padding for content inside the hero section */
+    color: var(--rhythm);
+    text-align: center; /* Centers the text horizontally */
+    display: flex; /* Uses Flexbox for vertical alignment */
+    justify-content: center;
+    align-items: center; /* Centers content horizontally */
 }
