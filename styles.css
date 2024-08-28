@@ -11,12 +11,11 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    margin-right: 0;
     padding: 0;
 }
 
-p {
-    text-indent: 30px; /* Adjust the pixel value as needed */
-}
+
 
 /* Header styling */
 .main-header {
@@ -39,17 +38,24 @@ p {
 /* Apply a unique font to the logo */
 #logo {
     font-family: Arial Impact, 'Arial Narrow Bold', sans-serif; /* Replace with your chosen font */
-    font-size: 1.6rem; /* Adjust size as needed */
     color: var(--rhythm); /* Replace with your preferred color */
     text-align: center;
     text-decoration: none; /* Remove underline */
     transition: color 0.3s ease; /* Smooth color transition */
-}
-.logo {
-    border: 2px solid var(--rhythm); /* Adjust border width, style, and color */
-    padding: 10px;
-    margin: 1px;
-}
+    display: inline-block; /* Keeps the text centered without spanning the whole width */
+  }
+  
+  .main-title {
+    font-size: 1.6rem; /* Adjust size for the main title */
+    margin: 0; /* Remove default margins */
+  }
+  
+  .sub-title {
+    font-size: 1.2rem; /* Adjust size for the subtitle */
+    margin: 0; /* Remove default margins */
+  }
+  
+
 /* Optional: Remove color change on click (focus) */
 #logo:focus,
 #logo:active {
@@ -189,7 +195,7 @@ p {
     background-position: top center; /* Positions the image at the top and centers horizontally */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     padding: 100px 20px 100px 0px; /* Padding for content inside the hero section */
-    color: var(--rhythm);
+    color: var(--arsenic);
     text-align: center; /* Centers the text horizontally */
     display: flex; /* Uses Flexbox for vertical alignment */
     justify-content: center;
@@ -209,21 +215,22 @@ p {
     margin: 0 auto; /* Centers the paragraph */
 }
 
+#contact {
+    padding-top: 0;
+}
 /* Blog Ribbon Styling */
 .blog-ribbon {
     display: block;
     background-color: var(--keppel);
     color: var(--rhythm);
     padding: 15px 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     font-size: 1.2rem;
     text-decoration: none;
     text-align: center;
-    position: sticky; /* Sticky positioning */
-    top: 0; /* Sticks to the top */
-    left: 0;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000; /* Ensures it stays above other content */
     transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -232,17 +239,40 @@ p {
     transform: translateY(-3px);
 }
 
+.ribbon-container {
+    margin-left: 0;
+    margin-bottom: 0;
+    background-color: var(--rhythm);
+    padding-bottom: 10px;
+}
+.ribbon-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-top: 0;
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+    color: var(--arsenic);
+    width: 100%; /* Makes the heading span across the full width */
+    text-align: center;
+}
+
+#last-ribbon {
+    margin-bottom: 0;
+}
 
 /* About Section Styling */
 .about-section {
     background-color: var(--gunmetal);
     color: var(--rhythm);
     padding: 60px 20px;
+    margin-top: 0;
 }
 
 .about-section .container {
     max-width: 900px;
     margin: 0 auto;
+    margin-top: 0;
     display: flex;
     align-items: stretch; /* Ensures items are the same height */
     gap: 20px; /* Adds space between the image and text */
@@ -252,6 +282,7 @@ p {
 .about-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    margin-left: 0px;
     font-family: Arial, sans-serif;
     color: var(--keppel);
     width: 100%; /* Makes the heading span across the full width */
@@ -592,3 +623,41 @@ li {
     justify-content: center;
     align-items: center; /* Centers content horizontally */
 }
+
+/* Footer styling */
+.footer {
+    background-color: #f8f8f8; /* Light gray background */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between social media icons */
+  }
+  
+  .footer .social-media a {
+    display: inline-block;
+  }
+  
+  .footer .social-media img {
+    width: 30px; /* Adjust the size as needed */
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer .social-media img:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+  }
+  
+  /* Ribbon styling */
+  .ribbon {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+  }
+  
+  
