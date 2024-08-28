@@ -1,0 +1,663 @@
+/* Define your colors */
+:root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    margin-right: 0;
+    padding: 0;
+}
+
+
+
+/* Header styling */
+.main-header {
+    background-color: var(--gunmetal);
+    padding: 20px;
+}
+
+.main-header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Logo styling */
+.main-header .logo img {
+    max-height: 50px;
+}
+
+/* Apply a unique font to the logo */
+#logo {
+    font-family: Arial Impact, 'Arial Narrow Bold', sans-serif; /* Replace with your chosen font */
+    color: var(--rhythm); /* Replace with your preferred color */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+    display: inline-block; /* Keeps the text centered without spanning the whole width */
+  }
+  
+  .main-title {
+    font-size: 1.6rem; /* Adjust size for the main title */
+    margin: 0; /* Remove default margins */
+  }
+  
+  .sub-title {
+    font-size: 1.2rem; /* Adjust size for the subtitle */
+    margin: 0; /* Remove default margins */
+  }
+  
+
+/* Optional: Remove color change on click (focus) */
+#logo:focus,
+#logo:active {
+    color: var(--arsenic); /* Keep the same color as default */
+}
+
+
+/* Navigation styling */
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-nav ul li {
+    margin-right: 20px;
+}
+
+.main-nav ul li:last-child {
+    margin-right: 0;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: var(--rhythm); /* Lighter color for better visibility */
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.main-nav ul li a:hover {
+    background-color: var(--keppel);
+    color: var(--outer-space);
+}
+
+/* Search area styling */
+.search-area {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-field {
+    margin-right: 10px;
+}
+
+.search-field form {
+    display: flex;
+    align-items: center;
+}
+
+.search-field input {
+    padding: 5px 10px;
+    border: 1px solid var(--arsenic);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-field input::placeholder {
+    color: var(--rhythm); /* Lighter color for better visibility */
+}
+
+/* Menu button styling */
+.menu-btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.menu-btn div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+/* Hide search area class */
+.hide-search-area {
+    display: none;
+}
+
+/* Hide nav list class */
+.hide-nav-list {
+    display: none;
+}
+
+/* Basic styles for dropdown menu */
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 60px; /* Adjust based on your layout */
+    right: 0;
+    background-color: var(--gunmetal); /* Match the background color of your nav */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu ul li {
+    margin: 0;
+}
+
+.dropdown-menu ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: var(--rhythm); /* Lighter color for better visibility */
+    text-decoration: none;
+}
+
+.dropdown-menu ul li a:hover {
+    background-color: var(--keppel);
+    color: var(--outer-space);
+}
+
+.show-dropdown {
+    display: block; /* Show the dropdown menu */
+}
+
+.hide-burger {
+    display: none;
+}
+
+/* Hero Section Styling */
+/* Hero Section Styling */
+.hero {
+    height: 300px;
+    background-image: url('hero-photo.jpeg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: top center; /* Positions the image at the top and centers horizontally */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 100px 20px 100px 0px; /* Padding for content inside the hero section */
+    color: var(--arsenic);
+    text-align: center; /* Centers the text horizontally */
+    display: flex; /* Uses Flexbox for vertical alignment */
+    justify-content: center;
+    align-items: center; /* Centers content horizontally */
+}
+
+.hero h1 {
+    font-size: 3rem; /* Main heading size */
+    margin-bottom: 200px;
+    color: var(--rhythm); /* Text color for the heading */
+}
+
+.hero-section p {
+    font-size: 1.2rem; /* Paragraph font size */
+    line-height: 1.6;
+    max-width: 600px; /* Limits paragraph width for readability */
+    margin: 0 auto; /* Centers the paragraph */
+}
+
+#contact {
+    padding-top: 0;
+}
+/* Blog Ribbon Styling */
+.blog-ribbon {
+    display: block;
+    background-color: var(--keppel);
+    color: var(--rhythm);
+    padding: 15px 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.blog-ribbon:hover {
+    background-color: var(--outer-space);
+    transform: translateY(-3px);
+}
+
+.ribbon-container {
+    margin-left: 0;
+    margin-bottom: 0;
+    background-color: var(--rhythm);
+    padding-bottom: 10px;
+}
+.ribbon-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-top: 0;
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+    color: var(--arsenic);
+    width: 100%; /* Makes the heading span across the full width */
+    text-align: center;
+}
+
+#last-ribbon {
+    margin-bottom: 0;
+}
+
+/* About Section Styling */
+.about-section {
+    background-color: var(--gunmetal);
+    color: var(--rhythm);
+    padding: 60px 20px;
+    margin-top: 0;
+}
+
+.about-section .container {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 0;
+    display: flex;
+    align-items: stretch; /* Ensures items are the same height */
+    gap: 20px; /* Adds space between the image and text */
+    flex-wrap: wrap;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    font-family: Arial, sans-serif;
+    color: var(--keppel);
+    width: 100%; /* Makes the heading span across the full width */
+    text-align: center;
+}
+
+.about-section .text-content {
+    flex: 2; /* Takes up twice the space compared to the image */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.about-section p {
+    margin: 0;
+}
+
+.about-section .profile-image {
+    flex: 1; /* Takes up one-third of the container */
+    max-width: 300px; /* Sets a maximum width for the image */
+    margin-left: auto; /* Ensures the image stays on the right */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section .profile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounds the corners of the image */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .about-section .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-section .text-content,
+    .about-section .profile-image {
+        flex: unset; /* Resets flex properties for stacking */
+        max-width: 100%; /* Ensures full width on smaller screens */
+        text-align: center;
+    }
+
+    .about-section .profile-image {
+        margin: 0 0 20px; /* Adds margin below the image */
+    }
+
+    .about-section h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-section .text-content {
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: 0 20px;
+    }
+
+    .about-section .profile-image {
+        max-width: 200px; /* Sets a smaller max width for very small screens */
+    }
+}
+
+/* About Section Button Styling */
+.about-button-container {
+    text-align: center; /* Centers the button horizontally */
+    margin-top: 40px; /* Space above the button */
+}
+
+/* Removes the default link styling for email links */
+.no-style-link {
+    color: inherit; /* Inherits the color from its parent element */
+    text-decoration: none; /* Removes the underline */
+}
+
+h4 {
+    color: #3AB0A2;
+}
+
+.about-button {
+    display: inline-block;
+    background-color: var(--keppel);
+    color: var(--rhythm);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.about-button:hover {
+    background-color: var(--outer-space);
+    transform: translateY(-3px);
+}
+
+/* Info Sections Styling */
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between the boxes */
+    padding: 20px; /* Padding around the section */
+}
+
+.info-box {
+    flex: 1;
+    min-width: 200px; /* Ensures the box has a minimum width */
+    height: 200px; /* Set a fixed height for the boxes */
+    background-size: cover; /* Ensures the background image covers the entire box */
+    background-position: center; /* Centers the background image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Removes the underline from links */
+    color: #fff; /* Text color */
+    border-radius: 10px; /* Rounds the corners of the boxes */
+    overflow: hidden; /* Hides any overflow content */
+    position: relative;
+    background-color: rgba(0, 0, 0, 1); /* Semi-transparent black overlay */
+}
+
+.info-box:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Adds a white shading effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increases shadow on hover */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.info-box .info-content {
+    text-align: center;
+    z-index: 1; /* Ensures text is above the background image */
+}
+
+.info-box h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.info-box p {
+    font-size: 1rem;
+}
+
+/* Add a semi-transparent overlay */
+.info-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Ensures the overlay is above the background but below the text */
+}
+
+/* Ensure text is above the overlay */
+.info-box * {
+    position: relative;
+    z-index: 2;
+}
+
+.info-box.join-study {
+    background-image: url('join-a-study.jpeg'); /* Replace with your image path */
+}
+
+.info-box.blog {
+    background-image: url('blog.jpeg'); /* Replace with your image path */
+}
+
+.info-box.bible-studies {
+    background-image: url('bible-study-material.jpeg'); /* Replace with your image path */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .info-sections {
+        flex-direction: column;
+    }
+
+    .info-box {
+        height: auto; /* Adjust height on smaller screens */
+    }
+}
+/* Hero Section Styling */
+/* Hero Section Styling */
+.hero-about {
+    height: 300px;
+    background-image: url('hero-about-photo.jpeg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: top center; /* Positions the image at the top and centers horizontally */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 100px 20px 100px 0px; /* Padding for content inside the hero section */
+    color: var(--rhythm);
+    text-align: center; /* Centers the text horizontally */
+    display: flex; /* Uses Flexbox for vertical alignment */
+    justify-content: center;
+    align-items: center; /* Centers content horizontally */
+}
+
+.hero h1 {
+    font-size: 3rem; /* Main heading size */
+    margin-bottom: 200px;
+    color: var(--rhythm); /* Text color for the heading */
+}
+
+.hero-section p {
+    font-size: 1.2rem; /* Paragraph font size */
+    line-height: 1.6;
+    max-width: 600px; /* Limits paragraph width for readability */
+    margin: 0 auto; /* Centers the paragraph */
+}
+
+.hero-join {
+    height: 300px;
+    background-image: url('hero-join.jpeg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: top center; /* Positions the image at the top and centers horizontally */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 100px 20px 100px 0px; /* Padding for content inside the hero section */
+    color: var(--rhythm);
+    text-align: center; /* Centers the text horizontally */
+    display: flex; /* Uses Flexbox for vertical alignment */
+    justify-content: center;
+    align-items: center; /* Centers content horizontally */
+}
+
+/* Styles for the Engage page */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333; /* Adjust as needed for readability */
+}
+
+.info-section {
+    margin-bottom: 20px;
+}
+
+.info-section h1, 
+.info-section h2, 
+.info-section h3 {
+    margin-bottom: 10px;
+    color: #000; /* Heading color */
+}
+
+.info-section p {
+    margin-bottom: 15px;
+    line-height: 1.6; /* Improves readability */
+}
+
+.info-section a {
+    color: #007bff; /* Adjust link color */
+    text-decoration: none;
+}
+
+.info-section a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Add a hover effect to the links */
+.info-section a:hover {
+    color: #0056b3; /* Adjust hover color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content {
+        padding: 15px;
+    }
+}
+
+.hero-blog {
+    height: 300px;
+    background-image: url('hero-blog.jpeg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: top center; /* Positions the image at the top and centers horizontally */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 100px 20px 100px 0px; /* Padding for content inside the hero section */
+    color: var(--rhythm);
+    text-align: center; /* Centers the text horizontally */
+    display: flex; /* Uses Flexbox for vertical alignment */
+    justify-content: center;
+    align-items: center; /* Centers content horizontally */
+}
+
+.hero h1 {
+    font-size: 3rem; /* Main heading size */
+    margin-bottom: 200px;
+    color: var(--rhythm); /* Text color for the heading */
+}
+
+.hero-section p {
+    font-size: 1.2rem; /* Paragraph font size */
+    line-height: 1.6;
+    max-width: 600px; /* Limits paragraph width for readability */
+    margin: 0 auto; /* Centers the paragraph */
+}
+
+.info-box.journey {
+    background-image: url('journey.png'); /* Replace with your image path */
+}
+
+.info-box.mosaic {
+    background-image: url('mosaic.jpeg'); /* Replace with your image path */
+}
+
+.info-box.praise {
+    background-image: url('praise.jpeg'); /* Replace with your image path */
+}
+
+.hero-study {
+    height: 300px;
+    background-image: url('hero-study.jpeg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: top center; /* Positions the image at the top and centers horizontally */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 100px 20px 100px 0px; /* Padding for content inside the hero section */
+    color: var(--rhythm);
+    text-align: center; /* Centers the text horizontally */
+    display: flex; /* Uses Flexbox for vertical alignment */
+    justify-content: center;
+    align-items: center; /* Centers content horizontally */
+}
+
+/* Footer styling */
+.footer {
+    background-color: #f8f8f8; /* Light gray background */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between social media icons */
+  }
+  
+  .footer .social-media a {
+    display: inline-block;
+  }
+  
+  .footer .social-media img {
+    width: 30px; /* Adjust the size as needed */
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer .social-media img:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+  }
+  
+  /* Ribbon styling */
+  .ribbon {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+  }
+  
+  
