@@ -15,7 +15,13 @@ body {
     padding: 0;
 }
 
+.scripture {
+    text-align: center;
+}
 
+p {
+    padding-bottom: 10px;
+}
 
 /* Header styling */
 .main-header {
@@ -361,13 +367,18 @@ body {
 }
 
 /* Removes the default link styling for email links */
-.no-style-link {
+a {
     color: inherit; /* Inherits the color from its parent element */
     text-decoration: none; /* Removes the underline */
 }
 
+h3 {
+    text-align: center;
+    color: var(--keppel);
+}
+
 h4 {
-    color: #3AB0A2;
+    color: var(--rhythm);
 }
 
 .about-button {
