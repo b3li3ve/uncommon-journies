@@ -15,8 +15,21 @@ body {
     padding: 0;
 }
 
+.social-media-links a {
+    text-decoration: none;
+    color: #000; /* Default color */
+    margin: 0 10px; /* Space between icons */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-media-links a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
 .scripture {
     text-align: center;
+    padding-bottom: 30px;
 }
 
 p {
@@ -27,6 +40,10 @@ p {
 .main-header {
     background-color: var(--gunmetal);
     padding: 20px;
+}
+
+.is-centered {
+    align-items: center;
 }
 
 .main-header .inner {
@@ -195,20 +212,47 @@ p {
 /* Hero Section Styling */
 /* Hero Section Styling */
 /* Hero container styling with specific height */
+.hero-index {
+    height: 300px;
+    background-image: url('hero-photo.jpeg'); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: top center; /* Positions the image at the top and centers horizontally */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    padding: 100px 20px 100px 0px; /* Padding for content inside the hero section */
+    color: var(--arsenic);
+    text-align: center; /* Centers the text horizontally */
+    display: flex; /* Uses Flexbox for vertical alignment */
+    justify-content: center;
+    align-items: center; /* Centers content horizontally */
+}
+
+.hero-index h1 {
+    font-size: 3rem; /* Main heading size */
+    margin-bottom: 200px;
+    color: var(--rhythm); /* Text color for the heading */
+}
+
+.hero-section p {
+    font-size: 1.2rem; /* Paragraph font size */
+    line-height: 1.6;
+    max-width: 600px; /* Limits paragraph width for readability */
+    margin: 0 auto; /* Centers the paragraph */
+}
+/* Hero container styling with specific height */
 .hero {
     width: 100%; /* Full width */
-    height: 500px; /* Set a specific height (e.g., 400px) */
     position: relative; /* Allows for absolute positioning within */
+    overflow: hidden; /* Hides overflow if any */
     display: flex; /* Use flexbox to align content */
     align-items: center; /* Center content vertically */
     justify-content: center; /* Center content horizontally */
 }
 
+
 /* Hero photo styling */
 .hero-photo {
     width: 100%; /* Full width of the container */
-    height: 100%; /* Full height of the container */
-    object-fit: fill; /* Stretch to fill the container */
+    object-fit: fit; /* Stretch to fill the container */
     display: block; /* Remove inline-block space */
 }
 
@@ -280,6 +324,18 @@ p {
 .about-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    margin-left: 0px;
+    font-family: Arial, sans-serif;
+    color: var(--keppel);
+    width: 100%; /* Makes the heading span across the full width */
+    text-align: center;
+}
+
+.about-section h3 {
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
     margin-left: 0px;
     font-family: Arial, sans-serif;
     color: var(--keppel);
@@ -497,6 +553,13 @@ h4 {
     align-items: center; /* Centers content horizontally */
 }
 
+.hero-about h1 {
+    padding-top: 300px;
+    font-size: 3rem; /* Main heading size */
+    margin-bottom: 200px;
+    color: var(--rhythm); /* Text color for the heading */
+}
+
 .hero h1 {
     font-size: 3rem; /* Main heading size */
     margin-bottom: 200px;
@@ -608,6 +671,10 @@ li {
 
 .info-box.journey {
     background-image: url('journey.png'); /* Replace with your image path */
+}
+
+.info-content h3 {
+    color: var(--rhythm)
 }
 
 .info-box.mosaic {
