@@ -5,63 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Singing in the Dark: Purposeful Psalms From Paul and Silas</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
+        /* Blog Post Styling */
+        :root {
+            --keppel: #3AB0A2;
+            --gunmetal: #2A3439;
+            --outer-space: #2B3A42;
+            --arsenic: #393D3F;
+            --rhythm: #CCCCCC; /* Lighter color for better visibility */
         }
-        .hero {
-            background: url('rhythm-background.jpg') no-repeat center center/cover;
-            color: #fff;
-            text-align: center;
-            padding: 50px 20px;
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
         }
-        .hero h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-        .content {
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
             padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
-        .content h2 {
-            color: #2a2a2a;
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
         }
-        .content p {
+
+        .blog-post p {
+            font-size: 1.1rem;
             line-height: 1.6;
+            margin-bottom: 20px;
         }
-        .content img {
-            max-width: 100%;
-            height: auto;
-            margin: 20px 0;
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
         }
-        .content blockquote {
-            border-left: 4px solid #007BFF;
-            padding-left: 20px;
-            margin: 20px 0;
-            font-style: italic;
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
         }
-        .content a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .content a:hover {
-            text-decoration: underline;
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <div class="hero">
+    <div class="hero blog-post">
         <h1>Singing in the Dark: Purposeful Psalms From Paul and Silas</h1>
     </div>
 
-    <div class="content">
+    <div class="content blog-post container">
         <p>For many Christians, the Book of Psalms (also known as the Psalter) is a favorite in the Bible—and understandably so. The book we call the Psalms is actually a collection of five books, each ending with a brief doxology (Psalms 41:13, 72:19, 89:52, 106:48). Psalm 150 pulls together all these doxologies in a powerful grand finale that doesn’t just encourage us but exhorts us to praise God!</p>
 
         <p>In just six short verses, the word “praise” appears 13 times in Psalm 150, commanding us repeatedly to “praise the Lord.” William Varner, in his devotional <em>Awake O Harp</em>, describes Psalm 150 as “genius” in “how much it says with so few words.” I have come to love the Psalms for this very reason—they speak profound truths in simple, powerful language.</p>
@@ -132,4 +148,11 @@
         <ul>
             <li>God is Sovereign and can be trusted—even when circumstances aren’t what we expected and seem hopeless.</li>
             <li>Sing songs of praise to God, no matter the circumstances—because you never know how your response will impact your own mind and heart, and the minds and hearts of those around you, both now and in the future.</li>
-            <li>Paul and Silas's response wasn’t feigned or faked. Paul and Silas’s trust in God was legit, hence the singing. Their trust stemmed from lives rooted and grounded in knowing who God is through their knowledge and understanding of the Scriptures. Furthermore, I am persuaded this deep understanding of God fueled all their praise songs regardless—even when
+            <li>Paul and Silas's response wasn’t feigned or faked. Paul and Silas’s trust in God was legit, hence the singing. Their trust stemmed from lives rooted and grounded in knowing who God is through their knowledge and understanding of the Scriptures. Furthermore, I am persuaded this deep understanding of God fueled all their praise songs regardless—even when they were beaten, jailed, and discouraged.</li>
+        </ul>
+
+        <p>Even in the darkest of circumstances, they understood that God was still good, still worthy of praise, and still in control of all things.</p>
+    </div>
+
+</body>
+</html>
