@@ -87,6 +87,7 @@ p {
 
 
 /* Navigation styling */
+
 .main-nav ul {
     list-style: none;
     margin: 0;
@@ -97,6 +98,7 @@ p {
 
 .main-nav ul li {
     margin-right: 20px;
+    position: relative; /* Necessary for submenu positioning */
 }
 
 .main-nav ul li:last-child {
@@ -116,32 +118,39 @@ p {
     color: var(--outer-space);
 }
 
-/* Search area styling */
-.search-area {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
+/* Submenu styling */
+/* Ensure submenu is hidden by default */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: var(--gunmetal); /* Adjust color to your theme */
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
 }
 
-.search-field {
-    margin-right: 10px;
+/* Show submenu when hovering over the parent menu item */
+.main-nav ul li:hover > .submenu {
+    display: block;
 }
 
-.search-field form {
-    display: flex;
-    align-items: center;
+/* Optional: adjust submenu positioning and style */
+.main-nav ul li {
+    position: relative; /* Ensure submenu positioning works correctly */
 }
 
-.search-field input {
+.submenu li a {
+    color: var(--outer-space); /* Adjust to fit your color scheme */
+    text-decoration: none;
     padding: 5px 10px;
-    border: 1px solid var(--arsenic);
-    border-radius: 4px;
-    font-size: 14px;
+    display: block;
 }
 
-.search-field input::placeholder {
-    color: var(--rhythm); /* Lighter color for better visibility */
+.submenu li a:hover {
+    background-color: var(--keppel); /* Change background on hover */
+    color: white;
 }
+
 
 /* Menu button styling */
 .menu-btn {
@@ -434,7 +443,8 @@ h3 {
 }
 
 h4 {
-    color: var(--rhythm);
+    font-size: 1.5rem;
+    color: var(--keppel);
 }
 
 .about-button {
@@ -528,6 +538,14 @@ h4 {
 
 .info-box.bible-studies {
     background-image: url('bible-study-material.jpeg'); /* Replace with your image path */
+}
+
+.info-box.about {
+    background-image: url('about.jpeg'); /* Replace with your image path */
+}
+
+.info-box.join-journey {
+    background-color: var(--outer-space); /* Semi-transparent black overlay */
 }
 
 /* Media Queries for Responsiveness */
@@ -798,3 +816,59 @@ aside {
 h4 {
     margin-top: 15px;
 }
+
+.comments-section {
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 2px solid #CCCCCC; /* Rhythm */
+    font-family: Arial, sans-serif; /* Use your site's font */
+  }
+  
+  #comment-form {
+    margin-bottom: 30px;
+  }
+  
+  #name, #comment {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #2B3A42; /* Outer Space */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light background for input fields */
+    color: #2A3439; /* Gunmetal */
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #3AB0A2; /* Keppel */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2A3439; /* Gunmetal */
+  }
+  
+  #comments-container {
+    margin-top: 20px;
+  }
+  
+  #comments-container p {
+    color: #2B3A42; /* Outer Space */
+    font-size: 16px;
+  }
+  
+  hr {
+    border: 1px solid #CCCCCC; /* Rhythm */
+    margin: 10px 0;
+  }
+
+  .indent {
+    margin-left: 20px;
+  }
+

@@ -44,3 +44,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.querySelector('.menu-btn');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+
+    menuBtn.addEventListener('click', () => {
+        // Toggle the visibility of the dropdown menu
+        dropdownMenu.classList.toggle('show-dropdown');
+    });
+});
+
+// Ensure dropdown toggles only on smaller screens if using the burger menu
+window.addEventListener('resize', handleResize);
+window.addEventListener('load', handleResize);
+

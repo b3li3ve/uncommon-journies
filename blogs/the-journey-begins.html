@@ -69,11 +69,26 @@
                 font-size: 0.9rem;
             }
         }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
     </style>
 </head>
 <body>
     <div class="blog-post">
         <div class="container">
+            <img src="journey.png" alt="the journy begins photo">
             <h1>The Journey Begins…</h1>
             <p>Hi, I’m Jamie. Welcome to my first blog post! As I sit down to write, I’m struck by how fitting it is to title this post “The Journey Begins.” While my journey with Jesus started years ago, this blog marks the beginning of a new chapter in my life and ministry—a chapter I get to share with you, and I’m very excited about that!</p>
 
@@ -91,6 +106,25 @@
 
             <h2>What are some thoughts you have about walking as a Christ-follower? What helps you stay on this journey? What questions do you have about your path?</h2>
         </div>
+        <div class="comments-section">
+            <h2>Comments</h2>
+            <form id="comment-form">
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+          
+              <label for="comment">Comment:</label><br>
+              <textarea id="comment" name="comment" rows="4" placeholder="Write your comment here..." required></textarea><br><br>
+          
+              <button type="submit">Post Comment</button>
+            </form>
+          
+            <div id="comments-container">
+              <!-- This is where comments will appear after submission -->
+            </div>
+          </div>
+          
+          
     </div>
 </body>
+<script src="blog-script.js"></script>
 </html>
