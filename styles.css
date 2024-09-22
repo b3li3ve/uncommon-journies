@@ -780,6 +780,36 @@ aside {
     background-color: #2A3439;
 }
 
+.dropdown-menu {
+    display: none; /* Hide by default */
+}
+
+.dropdown-menu.active {
+    display: block; /* Show when active */
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+    .main-nav {
+        display: none; /* Hide main nav */
+    }
+    .menu-btn {
+        display: block; /* Show burger button */
+    }
+    .dropdown-menu {
+        display: none; /* Ensure dropdown is hidden */
+    }
+    .sticky-nav {
+        display: none;
+    }
+}
+
+header {
+    z-index: 101;
+}
+
+
+
 .sticky-nav {
     top: 20px; /* Adjust this if needed */
     flex: 0 0 200px; /* Width of the sticky nav */
