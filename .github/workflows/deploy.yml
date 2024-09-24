@@ -6,18 +6,18 @@ on:
       - main  # Change this to your working branch if necessary
 
 jobs:
-  sftp-deploy:
+  ftp-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Upload via SFTP
+      - name: Upload via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: sftp.yourdomain.com # Use your SFTP server address (usually same as FTP)
+          server: ftp.yourdomain.com # Use your actual FTP server address
           username: ${{ secrets.FTP_USERNAME }} # Your GitHub secret for FTP username
           password: ${{ secrets.FTP_PASSWORD }} # Your GitHub secret for FTP password
-          protocol: sftp # Change to sftp
+          protocol: ftp # Use ftp or ftps
           local-dir: ./ # Change this if your project directory is different
           server-dir: /public_html/ # Ensure it ends with a /
