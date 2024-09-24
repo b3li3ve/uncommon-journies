@@ -1,0 +1,22 @@
+name: Deploy to GoDaddy
+
+on:
+  push:
+    branches:
+      - main # Change this if you're using a different branch
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Upload via FTP
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        ftp-server: ftp://ftp.yourdomain.com
+        ftp-username: ${{ secrets.FTP_USERNAME }}
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./ # Point to your project directory
+        server-dir: /public_html # Path where your website files go on GoDaddy
