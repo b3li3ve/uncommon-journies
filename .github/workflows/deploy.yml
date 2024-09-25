@@ -19,5 +19,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }} # Your GitHub secret for FTP username
           password: ${{ secrets.FTP_PASSWORD }} # Your GitHub secret for FTP password
           protocol: ftp # Use ftp or ftps
-          local-dir: ./ # Change this if your project directory is different
+          local-dir: jamie-hulker # Change this if your project directory is different
           server-dir: /public_html/ # Ensure it ends with a /
