@@ -288,7 +288,7 @@ p {
     font-size: 1.2rem;
     text-decoration: none;
     text-align: center;
-    width: 99%;
+    width: 100vw;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s, transform 0.3s;
 }
