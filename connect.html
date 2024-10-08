@@ -87,77 +87,62 @@
                 <p>Jamie’s study Esteemed is an insightful study into the women of the Bible and how God used each of them. The study experience left me amazed, and was a great reminder of just how many women he did use, and how he prepared each one for her purpose. It brought into focus the impact these women had then and how God can use women in the present day as well.</p>
                 <p><em>-Robin</em></p>
             </div>
-            <!-- Email List Signup -->
-<div class="text-content">
-    <h3>Join Our Email List</h3>
-    <p>Sign up for notifications when a new blog, study, or book is released. (We may include a quick
-        verification step to ensure you’re human when you sign up.)</p>
-    <form id="emailListForm">
-        <label for="email">Email Address:</label>
-        <input type="email" id="emailListInput" name="email" required>
-        <button type="submit">Sign Up</button>
-    </form>
-    <div id="emailListResult"></div>
-</div>
-
-<!-- Prayer Team Signup -->
-<div class="text-content">
-    <h3>Join Our Prayer Team</h3>
-    <p>Partner with us in prayer! Pray for our ministry, our partners, and for those who will find
-        encouragement and equipping here.</p>
-    <form id="prayerTeamForm">
-        <label for="email">Email Address:</label>
-        <input type="email" id="prayerTeamInput" name="email" required>
-        <button type="submit">Sign Up</button>
-    </form>
-    <div id="prayerTeamResult"></div>
-</div>
+            <body>
+                <!-- Email List Signup -->
+                <div class="text-content">
+                    <h3>Join Our Email List</h3>
+                    <p>Sign up for notifications when a new blog, study, or book is released.</p>
+                    <form id="emailListForm">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="emailListInput" name="email" required>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                    <div id="emailListResult"></div>
+                </div>
+            
+                <!-- Prayer Team Signup -->
+                <div class="text-content">
+                    <h3>Join Our Prayer Team</h3>
+                    <p>Partner with us in prayer! Pray for our ministry, our partners, and for those who will find encouragement and equipping here.</p>
+                    <form id="prayerTeamForm">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="prayerTeamInput" name="email" required>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                    <div id="prayerTeamResult"></div>
+                </div>
+            
+                <!-- JavaScript -->
+<!-- Your HTML content here -->
 
 <script>
-    document.getElementById('emailListForm').addEventListener('submit', async function(e) {
-        e.preventDefault();
-        const email = document.getElementById('emailListInput').value;
-        const result = document.getElementById('emailListResult');
-
-        const response = await subscribeToMailchimp(email, '857c99f360', '82d5ef6937949223a01145f6efd65afd-us11');
-        result.innerHTML = response;
-    });
-
-    document.getElementById('prayerTeamForm').addEventListener('submit', async function(e) {
-        e.preventDefault();
-        const email = document.getElementById('prayerTeamInput').value;
-        const result = document.getElementById('prayerTeamResult');
-
-        const response = await subscribeToMailchimp(email, '857c99f360', '82d5ef6937949223a01145f6efd65afd-us11');
-        result.innerHTML = response;
-    });
-
-    async function subscribeToMailchimp(email, audienceId, apiKey) {
-        const url = `https://us11.api.mailchimp.com/3.0/lists/${audienceId}/members/`;
-        const data = {
-            email_address: email,
-            status: "subscribed"
-        };
-
-        const response = await fetch(url, {
+    document.getElementById('emailListForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+    
+        const emailValue = document.getElementById('emailListInput').value;
+    
+        fetch('https://jamie-mailchimp.herokuapp.com/subscribe', {
             method: 'POST',
             headers: {
-                'Authorization': 'apikey ' + apiKey,
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify({ email: emailValue })
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById('emailListResult').innerText = 'Subscribed successfully!';
+        })
+        .catch(error => {
+            document.getElementById('emailListResult').innerText = 'Subscription failed: ' + error.message;
         });
-
-        const resultData = await response.json();
-        if (response.ok) {
-            return 'Thank you for subscribing!';
-        } else if (resultData.title === "Member Exists") {
-            return 'You are already subscribed!';
-        } else {
-            return 'There was an error. Please try again.';
-        }
-    }
-</script>
+    });
+    </script>
+    
 
     </section>
     <section class="info-sections">

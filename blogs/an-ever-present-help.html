@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journey Begins</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="blog-post">
+        <div class="container">
+            <img src="help.jpeg" alt="present help photo">
+            <h1>An Ever-present Help in Trouble!</h1>
+           <p>Psalm 46 1-3 says…        </p>
+           <p>	“God is our refuge and strength, an ever-present help in trouble.
+            Therefore, we will not fear, though the earth give way and the
+            mountains fall into the heart of the sea, though its waters roar
+            and foam and the mountains quake with their surging.”</p>
+            <p>This month in North Carolina, many of us have witnessed, through the news media, the devastating results of Hurricane Helene. The pictures have often been no less than horrific, with the destruction of homes due to flooding and the displacement of many lives. 
+            </p>
+            <p>For those with family who live in that area, prayers have been the major source of comfort for their loved ones!   Psalm 46:1-3 has been one relative’s personal prayer for her dear family.  Here is her story of seeing God’s faithfulness…
+            </p>
+            <p><em>"I felt so saddened with the news of my family’s great loss!  With no insurance,
+                and the unexpected flooding, they needed a quick leaving of their home to 
+                get to higher ground.  The water was swift, filling every space of homes on the mountain, theirs included.  Yet even though their home was destroyed, God
+               spared the lives of this couple and their child. Their neighbor wasn’t so fortunate!
+               </em></p>
+               <p><em>As I prayed for them to see God as their refuge and to be the receivers of Christian
+                help, a thought came to mind to pray for Samaritan’s Purse.  Knowing that they were
+                often the first on the scene to help with such disasters, I prayed that somehow, even
+                in the midst of so many who experienced great loss…that my family would be one of
+                the families who would receive their help!</em></p>
+                <p><em>God, you are a God who sees…I knew that and prayed that but could not have imagined His answer. I was overwhelmed at the amazing timing for my loved ones. The next interaction with them found that Samaritan’s Purse haf already notified them, and the rebuilding had begun.</em></p>
+                <p><em>God is all-seeing!  “Thank you for seeing my family!”  God is compassionate!  “Thank you for using Samaritan’s Purse in their lives!” </em></p>
+                <p><em>“Dear Lord, may my family see your hand in all of this help, and may they turn to You in trust during these days ahead.”  
+                </em></p>
+                <p><em><strong>We decided to share this anonymously to protect all involved. Still, we did want to share it to remind and encourage us all that despite how we may feel or even what we see, God is working amid all the devastation and destruction, precisely as this specific answer to prayer shows. There is hope in that truth! Let’s keep praying! </strong></em></p>
+                <p><em><strong>And let’s GO HELP! H4Y is putting together a team from our community to serve with Samaritan’s Purse for three days and two nights (Nov. 1-3) to help with recovery around the Asheville area. We need 14 people to make a team, but we’ll take as many prayer partners as we can get! Let us know if you want to join the team by emailing <a href="mailto:jamie@jamiehulker.com" class="no-style-link"><strong>jamie@jamiehulker.com</strong></a> for more information. 
+                </strong></em></p>
+        </div>
+        <div class="comments-section">
+            <h2>Comments</h2>
+            <form id="comment-form">
+              <label for="name">Name:</label><br>
+              <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+          
+              <label for="comment">Comment:</label><br>
+              <textarea id="comment" name="comment" rows="4" placeholder="Write your comment here..." required></textarea><br><br>
+          
+              <button type="submit">Post Comment</button>
+            </form>
+          
+            <div id="comments-container">
+              <!-- This is where comments will appear after submission -->
+            </div>
+          </div>
+          
+          
+    </div>
+</body>
+<script src="blog-script.js"></script>
+</html>

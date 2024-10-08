@@ -711,6 +711,10 @@ li {
     background-image: url('mosaic.jpeg'); /* Replace with your image path */
 }
 
+.info-box.help {
+    background-image: url('help.jpeg');
+}
+
 .info-box.praise {
     background-image: url('praise.jpeg'); /* Replace with your image path */
 }
