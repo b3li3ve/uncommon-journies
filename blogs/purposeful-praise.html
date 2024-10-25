@@ -7,12 +7,12 @@
     <style>
         /* Blog Post Styling */
         :root {
-            --keppel: #3AB0A2;
-            --gunmetal: #2A3439;
-            --outer-space: #2B3A42;
-            --arsenic: #393D3F;
-            --rhythm: #CCCCCC; /* Lighter color for better visibility */
-        }
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
 
         .blog-post {
             background-color: var(--rhythm);
@@ -67,25 +67,1437 @@
             .blog-post p {
                 font-size: 0.9rem;
             }
-            blockquote {
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
                 font-size: 0.9rem;
             }
         }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
+    </style>    <style>
+        /* Blog Post Styling */
+        :root {
+    --keppel: #3AB0A2;
+    --gunmetal: #2A3439;
+    --outer-space: #2B3A42;
+    --arsenic: #393D3F;
+    --rhythm: #CCCCCC; /* Lighter color for better visibility */
+}
+
+        .blog-post {
+            background-color: var(--rhythm);
+            color: var(--gunmetal);
+            padding: 60px 20px;
+        }
+
+        .blog-post .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--rhythm);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-post h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: var(--keppel);
+            text-align: center;
+        }
+
+        .blog-post p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .blog-post h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--keppel);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+
+            .blog-post p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 1.8rem;
+            }
+
+            .blog-post p {
+                font-size: 0.9rem;
+            }
+        }
+        .comments-section {
+    margin-top: 20px;
+    background-color: var(--outer-space);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#comments-container div {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--rhythm);
+    border-radius: 5px;
+}
+
     </style>
 </head>
 
 <body>
 
     <div class="content blog-post container">
-        <img src="praise.jpeg" alt="">
+        <img src="praise.jpeg" alt=""><sup><a href="#footnote1">1</a></sup>
 
         <h1>Singing in the Dark: Purposeful Psalms From Paul and Silas</h1>
 
-        <p>For many Christians, the Book of Psalms (also known as the Psalter) is a favorite in the Bible—and understandably so. The book we call the Psalms is actually a collection of five books, each ending with a brief doxology (Psalms 41:13, 72:19, 89:52, 106:48). Psalm 150 pulls together all these doxologies in a powerful grand finale that doesn’t just encourage us but exhorts us to praise God!</p>
-
-        <p>In just six short verses, the word “praise” appears 13 times in Psalm 150, commanding us repeatedly to “praise the Lord.” William Varner, in his devotional <em>Awake O Harp</em>, describes Psalm 150 as “genius” in “how much it says with so few words.” I have come to love the Psalms for this very reason—they speak profound truths in simple, powerful language.</p>
-
-        <p>But let’s be honest: sometimes, it’s challenging to offer praise to God, especially when the circumstances of our lives are difficult or differ from what we’ve hoped or expected.</p>
+        <p>For many Christians, the Book of Psalms is a favorite in the Bible—and understandably so. The book we call the Psalms is actually a collection of five books, each ending with a brief doxology (Psalms 41:13, 72:19, 89:52, 106:48). Psalm 150 pulls together all these doxologies in a powerful grand finale that doesn’t just encourage us but exhorts us to praise God!</p>
+<p>In just six short verses, the word “praise” appears thirteen times in Psalm 150, commanding us repeatedly to “praise the Lord.” William Varner, in his devotional Awake O Harp, describes Psalm 150 as “genius” in “how much it says with so few words.”<sup><a href="#footnote2">2</a></sup> I have come to love the Psalms for this very reason—they speak profound truths in simple, yet powerful language. But let’s be honest: sometimes, it’s challenging to praise God, especially when the circumstances of our lives are difficult or differ from what we hoped for or expected.</p>
 
         <p>Today, while studying the timeline of the Apostle Paul’s life, I came across a picture of the Philippian jail (above) where Paul and Silas were said to have been held. It struck me in a new way that this jail is most likely where they followed the exhortation of Psalm 150 and sang praise to God in their own difficult situation that was quite different from what they’d hoped for.</p>
 
@@ -127,7 +1539,7 @@
                 You are worthy of it all<br>
                 For from You are all things<br>
                 And to You are all things<br>
-                You deserve the glory.<br>
+                You deserve the glory. <sup><a href="#footnote3">3</a></sup><br>
             </blockquote>
         </em>
 
@@ -144,7 +1556,7 @@
                 And the angels cry, “Holy”<br>
                 All creation cries, “Holy”<br>
                 You are lifted high, holy<br>
-                Holy forever.<br>
+                Holy forever. <sup><a href="#footnote4">4</a></sup><br>
             </blockquote>
         </em>
 
@@ -157,13 +1569,46 @@
         <p>So, what can we take from this story? Lots. But here’s my three takeaways today:</p>
 
         <ul>
-            <li>God is Sovereign and can be trusted—even when circumstances aren’t what we expected and seem hopeless.</li>
-            <li>Sing songs of praise to God, no matter the circumstances—because you never know how your response will impact your own mind and heart, and the minds and hearts of those around you, both now and in the future.</li>
-            <li>Paul and Silas's response wasn’t feigned or faked. Paul and Silas’s trust in God was legit, hence the singing. Their trust stemmed from lives rooted and grounded in knowing who God is through their knowledge and understanding of the Scriptures. Furthermore, I am persuaded this deep understanding of God fueled all their praise songs regardless—even when they were beaten, jailed, and discouraged.</li>
+            <li><strong>God is Sovereign and can be trusted—</strong>even when circumstances aren’t what we expected and seem hopeless.</li>
+            <li><strong>Sing songs of praise to God, no matter the circumstances—</strong>because you never know how your response will impact your own mind and heart, and the minds and hearts of those around you, both now and in the future.</li>
+            <li><strong>Paul and Silas's response wasn’t feigned or faked.</strong> Paul and Silas’s trust in God was legit, hence the singing. Their trust stemmed from lives rooted and grounded in knowing who God is through their knowledge and understanding of the Scriptures. Furthermore, I am persuaded this deep understanding of God fueled all their praise songs regardless—even when they were beaten, jailed, and discouraged.</li>
         </ul>
 
-        <p>Even in the darkest of circumstances, they understood that God was still good, still worthy of praise, and still in control of all things.</p>
+        <em>
+            <p>Even in the darkest of circumstances, they understood that God was still good, still worthy of praise, and still in control of all things.</p>
+        </em>
+        <p>Despite what you’re facing, let me encourage you to take a page out of Paul and Silas’ book and 
+            follow the exhortation of Psalm 150. Sing what you know to be true about God and see if that 
+            encourages your heart.</p>
+        <p>If you’re not in the mood to sing, that’s totally okay! (I bet Paul and Silas felt the same way). You 
+            might want to ask God for the grace to sing anyway, or perhaps reach out to a friend for a little 
+            prayer or song. If you’re unsure what to sing, why not try one of the Hallel Psalms (113-119) or 
+            check out some of the modern songs listed above? Any of these suggestions can help remind us 
+            of God’s caring presence in our lives and His Sovereignty through every challenge we face.</p>
     </div>
-
+    <h2>What about you? What is your favorite song to sing in difficult or unexpected places?</h2>
+    <h2>Has God used any of your songs in difficult or unexpected situation(s) to impact those around you for His glory and their good? If so, please share!</h2>
+    <div class="comments-section">
+        <h2>Comments</h2>
+        <form id="comment-form">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+      
+          <label for="comment">Comment:</label><br>
+          <textarea id="comment" name="comment" rows="4" placeholder="Write your comment here..." required></textarea><br><br>
+      
+          <button type="submit">Post Comment</button>
+        </form>
+      
+        <div id="comments-container">
+          <!-- This is where comments will appear after submission -->
+        </div>
+      </div>
 </body>
+<footer>
+    <p id="footnote1"><sup>1</sup>Sadly, I have not yet visited Philippi, but it’s on the list! Check out our website for more information about this upcoming study trip. Until I can take my own pictures, I want to thank the “Trip Advisor” user who posted this great pic. </p>
+    <p id="footnote2"><sup>2</sup>      William Varner, Awake O Harp: A Devotional Commentary on the Psalms, First Edition. (Woodlands, TX: Kress Biblical Resources, 2011), 384.</p>
+    <p id="footnote3"><sup>3</sup>      “Worthy of it All,” by David Brymer.</p>
+    <p id="footnote4"><sup>4</sup>      “Holy Forever,” by Chris Tomlin, Brian Johnson, Jason Ingram, Jenn Johnson, and Phil Wickham.</p>
+</footer>
 </html>
