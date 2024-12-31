@@ -715,8 +715,40 @@ li {
     background-image: url('help.jpeg');
 }
 
+.info-box.rest {
+    background-image: url('rest.png');
+}
+
 .info-box.praise {
     background-image: url('praise.jpeg'); /* Replace with your image path */
+}
+
+.info-box.winning {
+    background-image: url('winning.png'); /* Replace with your image path */
+}
+
+.info-box.race {
+    background-image: url('race.png'); /* Replace with your image path */
+    background-size: cover;           /* Ensures the image covers the entire container */
+    background-position: top; 
+}
+
+.info-box.invitation {
+    background-image: url('invitation.jpeg'); /* Replace with your image path */
+    background-size: cover;           /* Ensures the image covers the entire container */
+    background-position: top; 
+}
+
+.info-box.taco {
+    background-image: url('why-not-both.jpg'); /* Replace with your image path */
+    background-size: cover;           /* Ensures the image covers the entire container */
+    background-position: top; 
+}
+
+.info-box.everything {
+    background-image: url('everything-season.png'); /* Replace with your image path */
+    background-size: cover;           /* Ensures the image covers the entire container */
+    background-position: top; 
 }
 
 .hero-study {
