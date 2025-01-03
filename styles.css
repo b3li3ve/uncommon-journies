@@ -86,8 +86,10 @@ p {
     color: var(--outer-space);
 }
 
+/* Dropdown menu styling */
 .submenu {
-    display: none; /* Hide by default */
+    visibility: hidden; /* Completely invisible */
+    opacity: 0; /* Hidden from view */
     position: absolute;
     top: 100%;
     left: 0;
@@ -95,6 +97,7 @@ p {
     min-width: 180px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .submenu li {
@@ -103,51 +106,18 @@ p {
 
 .submenu a {
     padding: 12px 16px;
+    color: white;
+    text-decoration: none;
 }
 
 .submenu a:hover {
-    visibility: visible;
     background-color: #575757;
 }
 
-/* Show dropdown on hover */
+/* Show submenu on hover */
 .menu-item:hover .submenu {
-    display: block;
-}
-
-/* Dropdown menu styles */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: var(--gunmetal);
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    z-index: 100;
-}
-
-.dropdown-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.dropdown-menu ul li a {
-    display: block;
-    padding: 10px 15px;
-    color: var(--rhythm);
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.dropdown-menu ul li a:hover {
-    background-color: var(--keppel);
-    color: var(--outer-space);
-}
-
-.show-dropdown {
-    display: block;
+    visibility: visible; /* Make it visible */
+    opacity: 1; /* Fully opaque */
 }
 
 /* Menu button styles */
