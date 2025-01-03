@@ -87,7 +87,6 @@ p {
 }
 
 .submenu {
-    visibility: hidden;
     display: none; /* Hide by default */
     position: absolute;
     top: 100%;
