@@ -1,4 +1,4 @@
-/* Define your colors */
+/* Define colors */
 :root {
     --keppel: #3AB0A2;
     --gunmetal: #2A3439;
@@ -11,20 +11,23 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    margin-right: 0;
     padding: 0;
+}
+
+p {
+    padding-bottom: 10px;
 }
 
 .social-media-links a {
     text-decoration: none;
-    color: #000; /* Default color */
-    margin: 0 10px; /* Space between icons */
-    font-size: 24px; /* Icon size */
-    transition: color 0.3s ease; /* Smooth color transition */
+    color: #000;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s ease;
 }
 
 .social-media-links a:hover {
-    color: #007bff; /* Change color on hover */
+    color: #007bff;
 }
 
 .scripture {
@@ -32,18 +35,10 @@ body {
     padding-bottom: 30px;
 }
 
-p {
-    padding-bottom: 10px;
-}
-
-/* Header styling */
+/* Header styles */
 .main-header {
     background-color: var(--gunmetal);
     padding: 20px;
-}
-
-.is-centered {
-    align-items: center;
 }
 
 .main-header .inner {
@@ -53,106 +48,110 @@ p {
     flex-wrap: wrap;
 }
 
-/* Logo styling */
-.main-header .logo img {
-    max-height: 50px;
-}
-
-/* Apply a unique font to the logo */
 #logo {
-    font-family: Arial Impact, 'Arial Narrow Bold', sans-serif; /* Replace with your chosen font */
-    color: var(--rhythm); /* Replace with your preferred color */
-    text-align: center;
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease; /* Smooth color transition */
-    display: inline-block; /* Keeps the text centered without spanning the whole width */
-  }
-  
-  .main-title {
-    font-size: 1.6rem; /* Adjust size for the main title */
-    margin: 0; /* Remove default margins */
-  }
-  
-  .sub-title {
-    font-size: 1.2rem; /* Adjust size for the subtitle */
-    margin: 0; /* Remove default margins */
-  }
-  
-
-/* Optional: Remove color change on click (focus) */
-#logo:focus,
-#logo:active {
-    color: var(--arsenic); /* Keep the same color as default */
+    font-family: 'Arial Narrow Bold', sans-serif;
+    color: var(--rhythm);
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
+#logo:hover {
+    color: var(--keppel);
+}
 
-/* Navigation styling */
-
+/* Navigation styles */
 .main-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
-.main-nav ul li {
-    margin-right: 20px;
-    position: relative; /* Necessary for submenu positioning */
+.main-nav li {
+    position: relative;
 }
 
-.main-nav ul li:last-child {
-    margin-right: 0;
-}
-
-.main-nav ul li a {
+.main-nav a {
     text-decoration: none;
-    color: var(--rhythm); /* Lighter color for better visibility */
-    font-size: 16px;
+    color: var(--rhythm);
     padding: 10px 15px;
+    display: block;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.main-nav ul li a:hover {
+.main-nav a:hover {
     background-color: var(--keppel);
     color: var(--outer-space);
 }
 
-/* Submenu styling */
-/* Ensure submenu is hidden by default */
 .submenu {
+    visibility: hidden;
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.submenu li {
+    width: 100%;
+}
+
+.submenu a {
+    padding: 12px 16px;
+}
+
+.submenu a:hover {
+    visibility: visible;
+    background-color: #575757;
+}
+
+/* Show dropdown on hover */
+.menu-item:hover .submenu {
+    display: block;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
     display: none;
     position: absolute;
-    background-color: var(--gunmetal); /* Adjust color to your theme */
-    padding: 10px;
+    top: 60px;
+    right: 0;
+    background-color: var(--gunmetal);
     border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.dropdown-menu ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-/* Show submenu when hovering over the parent menu item */
-.main-nav ul li:hover > .submenu {
+.dropdown-menu ul li a {
     display: block;
-}
-
-/* Optional: adjust submenu positioning and style */
-.main-nav ul li {
-    position: relative; /* Ensure submenu positioning works correctly */
-}
-
-.submenu li a {
-    color: var(--outer-space); /* Adjust to fit your color scheme */
+    padding: 10px 15px;
+    color: var(--rhythm);
     text-decoration: none;
-    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-menu ul li a:hover {
+    background-color: var(--keppel);
+    color: var(--outer-space);
+}
+
+.show-dropdown {
     display: block;
 }
 
-.submenu li a:hover {
-    background-color: var(--keppel); /* Change background on hover */
-    color: white;
-}
-
-
-/* Menu button styling */
+/* Menu button styles */
 .menu-btn {
     cursor: pointer;
     display: flex;
@@ -168,60 +167,28 @@ p {
     margin-top: 2px;
 }
 
-/* Hide search area class */
-.hide-search-area {
-    display: none;
-}
-
-/* Hide nav list class */
-.hide-nav-list {
-    display: none;
-}
-
-/* Basic styles for dropdown menu */
-.dropdown-menu {
-    display: none; /* Hidden by default */
-    position: absolute;
-    top: 60px; /* Adjust based on your layout */
-    right: 0;
-    background-color: var(--gunmetal); /* Match the background color of your nav */
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    z-index: 100;
-}
-
-.dropdown-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.dropdown-menu ul li {
-    margin: 0;
-}
-
-.dropdown-menu ul li a {
-    display: block;
-    padding: 10px 15px;
-    color: var(--rhythm); /* Lighter color for better visibility */
-    text-decoration: none;
-}
-
-.dropdown-menu ul li a:hover {
-    background-color: var(--keppel);
-    color: var(--outer-space);
-}
-
-.show-dropdown {
-    display: block; /* Show the dropdown menu */
-}
-
+/* Utility classes */
+.hide-search-area,
+.hide-nav-list,
 .hide-burger {
     display: none;
 }
 
-#burger {
-    z-index: 101;
+/* Media Query for smaller screens (for burger menu) */
+@media (max-width: 768px) {
+    .main-nav ul {
+        display: none; /* Hide main nav list on smaller screens */
+    }
+    
+    .main-nav.active ul {
+        display: flex; /* Show nav list when burger menu is clicked */
+        flex-direction: column;
+    }
+
+    /* Show dropdown menu when burger is clicked */
+    .show-dropdown {
+        display: block;
+    }
 }
 
 /* Hero Section Styling */
