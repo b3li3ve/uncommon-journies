@@ -86,18 +86,25 @@ p {
 }
 
 /* Dropdown menu styling */
+/* Default hidden state */
 .submenu {
-    visibility: hidden; /* Completely invisible */
-    opacity: 0; /* Hidden from view */
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
     position: absolute;
     top: 100%;
     left: 0;
     background-color: #333;
     min-width: 180px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    transition: opacity 0.3s ease-in-out;
 }
+
+/* Visible state */
+.submenu.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 .submenu li {
     width: 100%;
@@ -114,8 +121,8 @@ p {
 }
 
 /* Show submenu on hover */
-.menu-item:hover .submenu {
-    visibility: visible; /* Make it visible */
+.show-dropdown {
+    display: block; /* Make dropdown visible */
     opacity: 1; /* Fully opaque */
 }
 
@@ -145,32 +152,25 @@ p {
 /* Media Query for smaller screens (for burger menu) */
 @media (max-width: 768px) {
     .main-nav ul {
-        display: none; /* Hide main nav list on smaller screens */
-    }
-    
-    .main-nav.active ul {
-        display: flex; /* Show nav list when burger menu is clicked */
+        display: none; /* Initially hidden */
         flex-direction: column;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
     }
 
-    /* Show dropdown menu when burger is clicked */
-    .show-dropdown {
-        display: block;
+    .main-nav ul.active {
+        display: flex; /* Show when active */
     }
 }
+
 
 /* Hero Section Styling */
 .hero-photo {
     width: 100%;
     display: block;
 }
-@keyframes hero-background {
-    0% { background-image: url('hero-photo.jpg'); }
-    25% { background-image: url('hero-photo2.jpg'); }
-    50% { background-image: url('hero-photo3.jpeg'); }
-    75% { background-image: url('hero-photo4.jpeg'); }
-    100% { background-image: url('hero-photo.jpg'); }
-}
+
 
 .hero-index {
     height: 300px;
@@ -737,23 +737,26 @@ li {
     flex: 1;
 }
 
-/* Sticky Navigation Bar */
-aside {
-    position: -webkit-sticky; /* For Safari */
-    position: sticky;
-    top: 0;
-    height: 102vh;
-    margin-top: 0;
-    background-color: #2A3439;
-}
 
 .dropdown-menu {
-    display: none; /* Hide by default */
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    right: 20px; /* Adjust based on design */
+    background-color: var(--gunmetal);
+    color: var(--rhythm);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
 }
 
-.dropdown-menu.active {
-    display: block; /* Show when active */
-    z-index: 100;
+.dropdown-menu.show-dropdown {
+    display: block; /* Make dropdown visible */
+}
+
+.dropdown-menu li:hover {
+    background-color: #3AB0A2;
+
 }
 
 @media (max-width: 768px) {
