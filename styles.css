@@ -39,6 +39,7 @@ p {
 .main-header {
     background-color: var(--gunmetal);
     padding: 20px;
+    height: 60px;
 }
 
 .main-header .inner {
@@ -48,11 +49,9 @@ p {
     flex-wrap: wrap;
 }
 
-#logo {
-    font-family: 'Arial Narrow Bold', sans-serif;
-    color: var(--rhythm);
-    text-decoration: none;
-    transition: color 0.3s ease;
+#logo-design {
+    height: 60px;
+    width: auto;
 }
 
 #logo:hover {
@@ -161,50 +160,33 @@ p {
 }
 
 /* Hero Section Styling */
-/* Hero Section Styling */
-/* Hero container styling with specific height */
+
+@keyframes hero-background {
+    0% { background-image: url('hero-photo.jpeg'); }
+    33% { background-image: url('hero-photo2.jpg'); }
+    66% { background-image: url('hero-photo3.png'); }
+    100% { background-image: url('hero-photo.jpeg'); }
+}
+
 .hero-index {
     height: 300px;
-    background-image: url('hero-photo.jpeg'); /* Background image */
     background-size: cover; /* Ensures the image covers the entire section */
-    background-position: top center; /* Positions the image at the top and centers horizontally */
+    background-position: center; /* Positions the image at the center */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     padding: 100px 20px 100px 0px; /* Padding for content inside the hero section */
     color: var(--arsenic);
     text-align: center; /* Centers the text horizontally */
     display: flex; /* Uses Flexbox for vertical alignment */
     justify-content: center;
-    align-items: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    animation: hero-background 12s infinite; /* Applies the animation */
+    animation-timing-function: ease-in-out; /* Smooth transitions */
 }
 
 .hero-index h1 {
     font-size: 3rem; /* Main heading size */
     margin-bottom: 200px;
     color: var(--rhythm); /* Text color for the heading */
-}
-
-.hero-section p {
-    font-size: 1.2rem; /* Paragraph font size */
-    line-height: 1.6;
-    max-width: 600px; /* Limits paragraph width for readability */
-    margin: 0 auto; /* Centers the paragraph */
-}
-/* Hero container styling with specific height */
-.hero {
-    width: 100%; /* Full width */
-    position: relative; /* Allows for absolute positioning within */
-    overflow: hidden; /* Hides overflow if any */
-    display: flex; /* Use flexbox to align content */
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-}
-
-
-/* Hero photo styling */
-.hero-photo {
-    width: 100%; /* Full width of the container */
-    object-fit: fit; /* Stretch to fill the container */
-    display: block; /* Remove inline-block space */
 }
 
 
