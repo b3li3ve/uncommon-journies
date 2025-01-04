@@ -162,10 +162,11 @@ p {
 /* Hero Section Styling */
 
 @keyframes hero-background {
-    0% { background-image: url('hero-photo.jpeg'); }
-    33% { background-image: url('hero-photo2.jpg'); }
-    66% { background-image: url('hero-photo3.png'); }
-    100% { background-image: url('hero-photo.jpeg'); }
+    0% { background-image: url('hero-photo.jpg'); }
+    25% { background-image: url('hero-photo2.jpg'); }
+    50% { background-image: url('hero-photo3.jpeg'); }
+    75% { background-image: url('hero-photo4.jpeg'); }
+    100% { background-image: url('hero-photo.jpg'); }
 }
 
 .hero-index {
@@ -179,7 +180,7 @@ p {
     display: flex; /* Uses Flexbox for vertical alignment */
     justify-content: center;
     align-items: center; /* Centers content vertically */
-    animation: hero-background 12s infinite; /* Applies the animation */
+    animation: hero-background 30s infinite; /* Applies the animation */
     animation-timing-function: ease-in-out; /* Smooth transitions */
 }
 
