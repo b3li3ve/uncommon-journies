@@ -9,7 +9,7 @@
 
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -160,7 +160,10 @@ p {
 }
 
 /* Hero Section Styling */
-
+.hero-photo {
+    width: 100%;
+    display: block;
+}
 @keyframes hero-background {
     0% { background-image: url('hero-photo.jpg'); }
     25% { background-image: url('hero-photo2.jpg'); }
@@ -577,6 +580,7 @@ ul {
 
 li {
     margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 /* Add a hover effect to the links */
