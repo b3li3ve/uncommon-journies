@@ -174,6 +174,7 @@ p {
 
 .hero-index {
     height: 300px;
+    background-image: url(hero-index.jpg);
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Positions the image at the center */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -183,8 +184,7 @@ p {
     display: flex; /* Uses Flexbox for vertical alignment */
     justify-content: center;
     align-items: center; /* Centers content vertically */
-    animation: hero-background 30s infinite; /* Applies the animation */
-    animation-timing-function: ease-in-out; /* Smooth transitions */
+
 }
 
 .hero-index h1 {
@@ -309,6 +309,70 @@ p {
     border-radius: 10px; /* Rounds the corners of the image */
 }
 
+.about-section2 {
+    background-color: var(--rhythm);
+    color: var(--gunmetal);
+    padding: 60px 20px;
+    margin-top: 0;
+}
+
+.about-section2 .container {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 0;
+    display: flex;
+    align-items: stretch; /* Ensures items are the same height */
+    gap: 20px; /* Adds space between the image and text */
+    flex-wrap: wrap;
+}
+
+.about-section2 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    font-family: Arial, sans-serif;
+    color: var(--keppel);
+    width: 100%; /* Makes the heading span across the full width */
+    text-align: center;
+}
+
+.about-section2 h3 {
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-family: Arial, sans-serif;
+    color: var(--keppel);
+    width: 100%; /* Makes the heading span across the full width */
+    text-align: center;
+}
+
+.about-section2 .text-content {
+    flex: 2; /* Takes up twice the space compared to the image */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.about-section2 p {
+    margin: 0;
+}
+
+.about-section2 .profile-image {
+    flex: 1; /* Takes up one-third of the container */
+    max-width: 300px; /* Sets a maximum width for the image */
+    margin-left: auto; /* Ensures the image stays on the right */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section2 .profile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounds the corners of the image */
+}
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .about-section .container {
