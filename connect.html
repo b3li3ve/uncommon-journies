@@ -120,93 +120,58 @@
             </div>
             <body>
                 <!-- Email List Signup -->
-                <div class="text-content">
-                    <h3>Join Our Email List</h3>
-                    <p>Sign up for notifications when a new blog, study, or book is released.</p>
-                    <form id="emailListForm">
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="emailListInput" name="email" required>
-                        <button type="submit">Sign Up</button>
-                    </form>
-                    <div id="emailListResult"></div>
-                </div>
-            
-                <!-- Prayer Team Signup -->
-                <div class="text-content">
-                    <h3>Join Our Prayer Team</h3>
-                    <p>Partner with us in prayer! Pray for our ministry, our partners, and for those who will find encouragement and equipping here.</p>
-                    <form id="prayerTeamForm">
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="prayerTeamInput" name="email" required>
-                        <button type="submit">Sign Up</button>
-                    </form>
-                    <div id="prayerTeamResult"></div>
-                </div>
+                <div class="email-signup">
+                    <div class="text-content">
+                        <h3>Join Our Email List</h3>
+                        <p>Sign up for notifications when a new blog, study, or book is released.</p>
+                        <form id="emailListForm">
+                            <button href="connect.html">Sign Up</button>
+                        </form>
+                        <div id="emailListResult"></div>
+                    </div>
+                </div> 
+    
             
                 <!-- JavaScript -->
 <!-- Your HTML content here -->
 
-<script>
-    document.getElementById('emailListForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent default form submission
-    
-        const emailValue = document.getElementById('emailListInput').value;
-    
-        fetch('https://jamie-mailchimp.herokuapp.com/subscribe', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ email: emailValue })
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok ' + response.statusText);
-            }
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById('emailListResult').innerText = 'Subscribed successfully!';
-        })
-        .catch(error => {
-            document.getElementById('emailListResult').innerText = 'Subscription failed: ' + error.message;
-        });
-    });
-    </script>
+
     
 
     </section>
-    <section class="info-sections">
-        <a href="study.html" class="info-box join-study">
-            <div class="info-content">
-                <h3>EQUIPPING</h3>
-                <p>Studies and Resources</p>
-            </div>
-        </a>
-        <a href="blog.html" class="info-box blog">
-            <div class="info-content">
-                <h3>ENCOURAGING</h3>
-                <p>Blogs and Connections</p>
-            </div>
-        </a>
-        <a href="join.html" class="info-box bible-studies">
-            <div class="info-content">
-                <h3>ENGAGING</h3>
-                <p>Study Tours and Events</p>
-            </div>
-        </a>
-        <a href="about.html" class="info-box about">
-            <div class="info-content">
-                <h3>About Us</h3>
-                <p>Our Story, Vision, and Beliefs</p>
-            </div>
-        </a>
-        <a href="connect.html" class="info-box join-journey">
-            <div class="info-content">
-                <h3>Connect With Us</h3>
-                <p>Be a Part of The Journey</p>
-            </div>
-        </a>
+    <section class="about-section">
+        <section class="info-sections">
+            <a href="study.html" class="info-box join-study">
+                <div class="info-content">
+                    <h3>EQUIPPING</h3>
+                    <p>Studies and Resources</p>
+                </div>
+            </a>
+            <a href="blog.html" class="info-box blog">
+                <div class="info-content">
+                    <h3>ENCOURAGING</h3>
+                    <p>Blogs and Connections</p>
+                </div>
+            </a>
+            <a href="join.html" class="info-box bible-studies">
+                <div class="info-content">
+                    <h3>ENGAGING</h3>
+                    <p>Study Tours and Events</p>
+                </div>
+            </a>
+            <a href="about.html" class="info-box about">
+                <div class="info-content">
+                    <h3>About Us</h3>
+                    <p>Our Story, Vision, and Beliefs</p>
+                </div>
+            </a>
+            <a href="connect.html" class="info-box join-journey">
+                <div class="info-content">
+                    <h3>Connect With Us</h3>
+                    <p>Be a Part of The Journey</p>
+                </div>
+            </a>
+        </section>
     </section>
 </main>
 </div>
